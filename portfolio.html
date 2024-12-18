@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Garamond, sans-serif;
+            line-height: 1.6;
+            background-color: #FFDDE2;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #AB4E68;
+            padding: 10px 0;
+            margin: 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #611426;
+            transform: scale(1.1);
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-image: url('pinkBg3.jpg');
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .skills div, .projects div {
+            flex: 1 1 calc(30% - 20px);
+            margin: 10px;
+            padding: 20px;
+            background-color: #FFFFFF;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .projects div:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .projects img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .projects img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #660029;
+            transition: color 0.3s ease;
+        }
+
+        h1:hover {
+            color: #AB4E68;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #660029;
+        }
+
+        p {
+            font-size: 18px;
+            color: #621E3E;
+        }
+
+        footer {
+            background: #AB4E68;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="homepage.html">Homepage</a>
+        <a href="biodata.html">My Biodata</a>
+        <a href="portfolio.html">My Portfolio</a>
+        <a href="video.html">My Video</a>
+        <a href="comment.html">Your Comments</a>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am passionate about 3D animation and design. I love turning ideas into beautiful and functional websites.</p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <div>
+                <h2>HTML, CSS and JavaScript</h2>
+                <p>Experienced in building semantic and accessible web pages.</p>
+            </div>
+            <div>
+                <h2>3D Animation</h2>
+                <p>Able to create 3D modeling and designs.</p>
+            </div>
+            <div>
+                <h2>C++ Programming Language</h2>
+                <p>Proficient in designing system software.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div>
+                <h2>Project A</h2>
+                <img src="anya.png" alt="Project A Screenshot">
+                <p>I have 3D modeled Anya Forger from Spy x Family.</p>
+            </div>
+            <div>
+                <h2>Project B</h2>
+                <img src="spooky.png" alt="Project B Screenshot">
+                <p>I have 3D modeled a haunted house with using several different lighting to enhance the spooky aura.</p>
+            </div>
+            <div>
+                <h2>Project C</h2>
+                <p>A system to purchase online furniture.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 Abigail H. All rights reserved.</p>
+    </footer>
+</body>
+</html>

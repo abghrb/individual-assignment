@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment section</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Garamond, sans-serif;
+			
+			background-image: url('pinkBg2.jpg'); /* Replace with your image path */
+            background-size: cover; /* Ensures the image covers the entire page */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-position: center; /* Centers the background image */
+            height: 100vh; /* Makes the body take up the full viewport height */
+            margin: 0; /* Removes default margins */
+        }
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+		
+		/* Header */
+        .header {
+            text-align: center;
+            background-color: #D87F97;
+            color: white;
+            padding: 20px 0;
+			font-family: Garamond, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #AB4E68;
+            padding: 10px 0;
+            margin: 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #611426;
+            transform: scale(1.1);
+        }
+		
+		h1 {
+            color: #660029;
+        }
+		
+		h2 {
+			font-size: 20px;
+			margin-bottom: 20px;
+			color: #660029;
+		}
+
+        p {
+            font-size: 18px;
+            color: #621E3E;
+        }
+		
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #FF98C1;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #7C3B60;
+        }
+		
+		footer {
+            background: #AB4E68;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+		
+    </style>
+</head>
+<body>
+	
+	 <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="homepage.html">Homepage</a>
+        <a href="biodata.html">My Biodata</a>
+        <a href="portfolio.html">My Portfolio</a>
+        <a href="video.html">My Video</a>
+        <a href="comment.html">Your Comments</a>
+    </div>
+	
+    <div class="form-container">
+        <h2>Leave a Comment</h2>
+        <form action="submit_form.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" placeholder="Your Comment..." rows="4" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+	
+	<!-- Social Media Links -->
+    <div class="social-media">
+        <h3>Follow Me</h3>
+        <a href="https://www.facebook.com/yourprofile" target="_blank">Facebook</a>
+        <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+    </div>
+	
+	<footer>
+        <p>&copy; 2024 Abigail H. All rights reserved.</p>
+    </footer>
+
+	
+</body>
+</html>
